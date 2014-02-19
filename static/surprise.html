@@ -1,6 +1,8 @@
 <!DOCTYPE HTML>
 <html>
   <head>
+    
+   
     <title>Foodora Settings</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="" />
@@ -19,18 +21,55 @@
 
   </head>
 
-  <body class="left-sidebar">
+  
+  <body onLoad = 'javascript:Randoms();'>
+            <!-- Content -->
+          <div id="content">
+            <div id="content-inner">
+              <h1>Thank You for pushing the Surprise Me Button. </h1>
+              <h1>Try----></h1>           
+              
+            <div align="center">
+            
+            <div id = "image"></div>
+            <script type="text/javascript"> 
+              var number = Math.floor(Math.random()*101);
+            //  document.write(number);
+              if(number <=25  ) {
+                  document.write("<p>Location: Price Center</p>");
+                  document.write("<p>Restraunt: Panda Express</p>");
+                  document.write("<p>Food: Orange Chicken</p>");
+
+                  
+              } else if(number >75){
+              // Print the number
+                  document.write("<p>Location: Price Center</p>");
+                  document.write("<p>Restraunt: Subway</p>");
+                  document.write("<p>Food: Foot Long Italian BMT</p>");
+                 } else if(number >50 ){
+                    document.write("<p>Location: Student Center</p>");
+                    document.write("<p>Restraunt: Hi Thai</p>");
+                    document.write("<p>Food: Chicken Pad Thai</p>");
+                    } else if(number >25 ){
+                      document.write("<p>Location: Rimac</p>");
+                      document.write("<p>Restraunt: Home Plate</p>");
+                      document.write("<p>Food: Chopped Salad</p>");
+                    
+                    }
+    </script>
+              
+
+            <!--div id="random">random number being created...</div--> 
+            </div>
+          </div>
+
+  </body>
+  <body class="left-sidebar" 
 
     <!-- Wrapper -->
       <div id="wrapper">
 
         <!-- Content -->
-          <div id="content">
-            <div id="content-inner">
-              <h1>Reserved for surprise me feature</h1>
-
-
-            </div>
           </div>
 
         <!-- Sidebar -->
