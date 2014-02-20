@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>Foodora Settings</title>
+    <title>Foodora Favorites</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -19,12 +19,6 @@
       <link rel="stylesheet" href="css/star.css" />
     </noscript>
 
-
-    <!--script tag for slideshow-->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script src="http://malsup.github.com/jquery.cycle2.js"></script>
-  <script src="http://malsup.github.io/jquery.cycle2.center.js"></script>
-  <link rel="stylesheet" href="css/demo-slideshow.css"/>
   </head>
 
   <body class="left-sidebar">
@@ -39,56 +33,19 @@
         <!--h1>Reserved for user's favorite restaurants</h1-->
         <!--div class="project" id="project1">
           <a href="project.html"-->
-
-
-        <!-- slideshow -->
-         <div class="cycle-slideshow"
-          data-cycle-fx=scrollHorz
-          data-cycle-speed="130"
-          data-cycle-center-horz=true
-          data-cycle-center-vert=true
-          data-cycle-swipe=true
-          data-cycle-caption="#adv-custom-caption"
-          data-cycle-caption-template="{{cycleTitle}}">
-
-          <!-- prev/next links -->
-          <div class="cycle-prev"></div>
-          <div class="cycle-next"></div>
-
-          <!-- empty element for overlay -->
-          <div class="cycle-overlay"></div>
-
-          <!-- empty element for pager links -->
-          <div class="cycle-pager"></div>
-
-          <!-- images in slideshow -->
-          <img src="http://nykotynethefuture.files.wordpress.com/2009/07/rolled-tacos.jpg" 
-          data-cycle-title="Food1"
-          data-cycle-desc="description1">
-          <img src="http://eatsblog.dallasnews.com/files/import/87379-in-n-out%20faux%20burger-thumb-500x333-87378.jpg"
-          data-cycle-title="Food2"
-          data-cycle-desc="desription2">
-          <img src="http://xd2.xanga.com/d76e036301434273669565/z218198634.jpg"
-          data-cycle-title="Food3"
-          data-cycle-desc="description3">
-          <img src="http://images7.alphacoders.com/402/402852.jpg"
-          data-cycle-title="Food4"
-          data-cycle-desc="description4">
-         </div>
-
-
-
             <div align="center">
             <img src="http://nykotynethefuture.files.wordpress.com/2009/07/rolled-tacos.jpg" alt="rolledtacos" >
             </div>
             <div align="center">
               
-            
+            <br><br>
             <h3>Vallarta</h3>
             <h4>Rolled Taco's</h4>
           </div>
           
           
+        </div>
+        <br><br>
         <div align="center">
         <span class="star-rating">
           <input type="radio" name="rating" value="1"><i></i>
@@ -105,6 +62,8 @@
         <div align="center">
         <strong class="choice">Choose a rating</strong>
         </div>
+
+        <br>
       <button onclick="location.href='favorites.html'">
      Submit</button>
 
@@ -113,7 +72,7 @@
 
         </body><body>
 
-
+        <br><br>
 
         <div align="center">
             <img src="http://eatsblog.dallasnews.com/files/import/87379-in-n-out%20faux%20burger-thumb-500x333-87378.jpg" alt="burger" >
@@ -127,7 +86,7 @@
           
           
         </div>
-
+        <br><br>
         <div align="center">
         <span class="star-rating">
           <input type="radio" name="rating2" value="1"><i></i>
@@ -144,6 +103,7 @@
         <strong class="choice">Choose a rating</strong>     
 
 </div>
+      <br>
       <button onclick="location.href='favorites.html'">
      Submit</button>
    
@@ -164,14 +124,14 @@
             </div>
             <div align="center">
               
-            
+          <br><br>  
             <h3>Outback</h3>
             <h4>Prime Rib</h4>
           </div>
           
           
         </div>
-
+      <br><br>  
         <div align="center">
         <span class="star-rating">
           <input type="radio" name="rating3" value="1"><i></i>
@@ -186,6 +146,9 @@
         <div>
         <div align="center">
         <strong class="choice">Choose a rating</strong>
+        <br><br>
+        <button onclick="location.href='favorites.html'">
+        Submit</button>
 
 
             </div>
@@ -209,16 +172,18 @@
           
             <!-- Logo -->
               <div id="logo">
-                <h1>Foodora</h1>
+                <h1>Favorites</h1>
               </div>
           
             <!-- Nav -->
               <nav id="nav">
                 <ul>
                   <li><a href="home.html">Home</a></li>
-                  <li><a href="settings.html">Settings</a></li>
+                  <li><a href="newrestraunt.html">Food Recommendations</a></li>
+                  <li><a href="ratings.html">Ratings</a></li>
                   <li class="current_page_item"><a href="favorites.html">Favorites</a></li>
                   <li><a href="surprise.html">Surprise Me!</a></li>
+
                 </ul>
               </nav>
 
@@ -232,7 +197,7 @@
               <section class="is-quit">
                 <nav id="nav">
                   <ul>
-                    <li><a href="/help.html">Help</a></li>
+                    <li><a href="help.html">Help</a></li>  
                     <li><a href="http://foodora123.herokuapp.com/">Exit</a></li>
                   </ul>
                 </nav>
@@ -246,8 +211,6 @@
       
 
 
-      <button onclick="location.href='favorites.html'">
-     Submit</button>
     </div>
 
   </body>
