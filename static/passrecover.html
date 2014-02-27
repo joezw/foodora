@@ -31,20 +31,20 @@
 
                 <div class="content style4 featured">
           <div class="container small">
-            <form method="post" action="#">
+            <form method="post" action="/recoverPass">
               <div class="row half">
-                <div class="6u"><input type="text" class="text" placeholder="Email" /></div>
+                <div class="6u"><input type="text" class="text" id="email" name="email" placeholder="Email" /></div>
               </div>
-            </form>
-
                 <div class="row">
                 <div class="12u">
                   <ul class="actions">
-                  <input class="button" type="button" value="Send Password" onClick="parent.location='index.html'">
-                  <input class="button" type="submit" value="Back" onClick="parent.location='index.html'">
+                    <li><input type="submit" class="button" value="Request Password" onClick="parent.location='index.html'"/></li>
+                    <li><input type="reset" class="button alt" value="Back" onClick="parent.location='index.html'"/></li>
                   </ul>
                 </div>
               </div>
+            </form>
+
           </div>
         </div>
 

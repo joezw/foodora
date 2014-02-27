@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    <title>Foodora Account Creation</title>
+    <title>Foodra Login Page</title>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -29,31 +29,52 @@
             <div id="content-inner">
 
 
-                <div class="content style4 featured">
+          
+          <div class="content style4 featured">
           <div class="container small">
-            <form method="post" action="/createAccount">
+            <form method="post" action="/login">
               <div class="row half">
-                <div class="6u"><input type="text" class="text" id="email" name="email" placeholder="Email" required class="form-control"/></div>
-                <div class="6u"><input type="text" class="text" id="password" name="password" placeholder="Password" required class="form-control"/></div>
+                <div class="6u"><input type="text" class="text" placeholder="Email" /></div>
+                <div class="6u"><input type="text" class="text" placeholder="Password" /></div>
               </div>
 
-                <div class="row">
+              <div class="row">
                 <div class="12u">
                   <ul class="actions">
-                    <li><input type="submit" class="button" value="Register" /></li>
-                    <li><input type="reset" class="button alt" value="Back" onClick="parent.location='index.html'"/></li>
+                    <li><input type="submit" class="button" value="Login" /></li>
+                    <li><input type="reset" class="button alt" value="Create Account" onClick="parent.location='createAccount.html'"/></li>
                   </ul>
                 </div>
               </div>
             </form>
-
-
+            
           </div>
         </div>
-
+        
+        <!--
+        <div class="content style4 featured">
+          <div class="container small">
+            <form method="post" action="./home.html">
+              <div class="row half">
+                <div class="6u"><input type="text" class="text" placeholder="Name" /></div>
+                <div class="6u"><input type="text" class="text" placeholder="Email"/></div>
+              </div>           
+            </form>
+            <div class="row">
+                <div class="12u">
+                  <ul class="actions">
+                  <input class="button" type="button" value="Login" onClick="parent.location='home.html'">
+                  <input class="button" type="submit" value="Create Account" onClick="parent.location='createAccount.html'">
+                  <br><a href="passrecover.html">click here if you forgot password </a>
+                  </ul>
+                </div>
+              </div>
+          </div>
+        </div>
+        -->
             </div>
           </div>
-
+        
         <!-- Sidebar -->
           <div id="sidebar">
           
@@ -62,17 +83,18 @@
                 <h1>Foodora</h1>
               </div>
 
-
-              <section class="is-quit">
+           <section class="is-quit">
                 <nav id="nav">
                   <ul>
                     <li><a href="/help.html">Help</a></li>
                     <li><a href="http://foodora123.herokuapp.com/">Exit</a></li>
                   </ul>
                 </nav>
-              </section>
+          </section>
 
           </div>
+
+
 
       </div>
 

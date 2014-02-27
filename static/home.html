@@ -17,6 +17,13 @@
       <link rel="stylesheet" href="css/style-wide.css" />
     </noscript>
 
+    <!--script tag for slideshow-->
+     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+     <script src="http://malsup.github.com/jquery.cycle2.js"></script>
+     <script src="http://malsup.github.io/jquery.cycle2.center.js"></script>
+     <link rel="stylesheet" href="css/demo-slideshow.css"/>
+
+
   </head>
 
   <body class="left-sidebar">
@@ -27,8 +34,45 @@
         <!-- Content -->
           <div id="content">
             <div id="content-inner">
-              <h1>Reserved for picture slideshow of top food</h1>
+              
+              <center><h5>Welcome to Foodora!</h5></center>
+              <br>
 
+              <!-- slideshow -->
+         <div class="cycle-slideshow"
+           data-cycle-fx=scrollHorz
+           data-cycle-speed="130"
+           data-cycle-center-horz=true
+           data-cycle-center-vert=true
+           data-cycle-swipe=true
+           data-cycle-caption="#adv-custom-caption"
+           data-cycle-caption-template="{{cycleTitle}}"
+           >
+ 
+           <!-- prev/next links -->
+           <div class="cycle-prev"></div>
+           <div class="cycle-next"></div>
+ 
+           <!-- empty element for overlay -->
+           <div class="cycle-overlay"></div>
+ 
+           <!-- empty element for pager links -->
+           <div class="cycle-pager"></div>
+ 
+           <!-- images in slideshow -->
+           <img src="http://nykotynethefuture.files.wordpress.com/2009/07/rolled-tacos.jpg" 
+           data-cycle-title="Rolled Tacos"
+           data-cycle-desc="Rigoberto's">
+           <img src="http://eatsblog.dallasnews.com/files/import/87379-in-n-out%20faux%20burger-thumb-500x333-87378.jpg"
+           data-cycle-title="Double Double"
+           data-cycle-desc="In-Out">
+           <img src="http://xd2.xanga.com/d76e036301434273669565/z218198634.jpg"
+           data-cycle-title="Steak Dinner"
+           data-cycle-desc="IHop">
+           <img src="http://images7.alphacoders.com/402/402852.jpg"
+           data-cycle-title="Breakfast Crepe"
+           data-cycle-desc="IHop">
+           </div>
 
             </div>
           </div>
@@ -62,7 +106,7 @@
               <section class="is-quit">
                 <nav id="nav">
                   <ul>
-                    <li><a href="help.html">Help</a></li>
+                    <li><a href="help2.html">Help</a></li>
                     <li><a href="http://foodora123.herokuapp.com/">Exit</a></li>
                   </ul>
                 </nav>
@@ -72,5 +116,9 @@
 
       </div>
 
+
+
   </body>
+
+
 </html>
