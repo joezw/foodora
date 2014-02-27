@@ -17,6 +17,8 @@
       <link rel="stylesheet" href="css/style-wide.css" />
     </noscript>
 
+    <link rel="stylesheet" href="css/demo-slideshow.css"/>
+
   </head>
 
   <body class="left-sidebar">
@@ -27,9 +29,25 @@
         <!-- Content -->
           <div id="content">
             <div id="content-inner">
-              <div align="center">
-              <img src="http://www.peeblescan.org/wp-content/uploads/2013/11/Banner_Food_Share.jpg" alt="rolledtacos" >
+              <div class = "cycle-slideshow" align="center">
+              <img src="http://www.peeblescan.org/wp-content/uploads/2013/11/Banner_Food_Share.jpg" alt="rolledtacos"
+              >
+              </div>
 
+              <!--New Restaurant Functionality-->
+              <div align="center">
+
+              <form action="newrestaurant.html" method="get">
+              Your Recommended Food is:<br><br>
+              Beef Tacos<br><br>
+              Rolled Tacos<br><br>
+              Carne Asada<br>
+
+      
+              <br>
+      
+              <button type="Rate" formaction="ratings.html" value = "Store Data" onclick="store()">Rate</button>  
+              </form>
               </div>
 
 
@@ -37,33 +55,20 @@
           </div>
 
 
-        <!--New Restraunt Functionality-->
-        <div align="center">
 
-        <form action="newrestraunt.html" method="get">
-        Your Recommended Food is:<br><br>
-        Beef Tacos<br><br>
-        Rolled Tacos<br><br>
-        Carne Asada<br>
-
-      
-      <br>
-      
-      <button type="Rate" formaction="ratings.html" value = "Store Data" onclick="store()">Rate</button>  
-      </form>
         <!-- Sidebar -->
           <div id="sidebar">
           
             <!-- Logo -->
               <div id="logo">
-                <h>Food Recommendation</h>
+                <h2>Food Recommendation</h2>
               </div>
           
-            <!-- Nav -->
+            <!-- Nav-->
               <nav id="nav">
                 <ul>
                   <li><a href="home.html">Home</a></li>
-                  <li><a href="newrestraunt.html">Food Recommendations</a></li>
+                  <li><a href="newrestaurant.html">Food Recommendations</a></li>
                   
                   <li><a href="ratings.html">Ratings</a></li>
                   <li><a href="favorites.html">Favorites</a></li>

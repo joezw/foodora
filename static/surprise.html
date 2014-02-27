@@ -19,6 +19,7 @@
       <link rel="stylesheet" href="css/style-wide.css" />
     </noscript>
 
+    <link rel="stylesheet" href="css/demo-slideshow.css"/>
   </head>
 
   
@@ -28,8 +29,9 @@
           <div id="content">
             <div id="content-inner">
                         <div>
-              <h1>Thank You for pushing the Surprise Me Button. </h1>              
-              <h1>Try----></h1>           
+              <h1>Thank You for pushing the Surprise Me Button. </h1>  
+              <br>            
+              <h1>Why not try...</h1>           
               
 
           </div>
@@ -41,24 +43,24 @@
               var number = Math.floor(Math.random()*101);
             //  document.write(number);
               if(number <=25  ) {
+                  document.write("<p>Restaurant: Panda Express</p>");
                   document.write("<p>Location: Price Center</p>");
-                  document.write("<p>Restraunt: Panda Express</p>");
-                  document.write("<p>Food: Orange Chicken</p>");
+                  document.write("<p>Dish: Orange Chicken</p>");
 
                   
               } else if(number >75){
               // Print the number
+                  document.write("<p>Restaurant: Subway</p>");                
                   document.write("<p>Location: Price Center</p>");
-                  document.write("<p>Restraunt: Subway</p>");
-                  document.write("<p>Food: Foot Long Italian BMT</p>");
+                  document.write("<p>Dish: Foot Long Italian BMT</p>");
                  } else if(number >50 ){
+                    document.write("<p>Restaurant: Hi Thai</p>");
                     document.write("<p>Location: Student Center</p>");
-                    document.write("<p>Restraunt: Hi Thai</p>");
-                    document.write("<p>Food: Chicken Pad Thai</p>");
+                    document.write("<p>Dish: Chicken Pad Thai</p>");
                     } else if(number >25 ){
+                      document.write("<p>Restaurant: Home Plate</p>");
                       document.write("<p>Location: Rimac</p>");
-                      document.write("<p>Restraunt: Home Plate</p>");
-                      document.write("<p>Food: Chopped Salad</p>");
+                      document.write("<p>Dish: Chopped Salad</p>");
                     
                     }
     </script>
@@ -66,6 +68,8 @@
 
             <!--div id="random">random number being created...</div--> 
             </div>
+            <br>
+            <center><a href="surprise.html" class="myButton">Try again?</a></center>
 
             </div>
             </div>

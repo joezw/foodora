@@ -18,44 +18,13 @@
       <link rel="stylesheet" href="css/style-wide.css" />
     </noscript>
 
+     <link rel="stylesheet" href="css/demo-slideshow.css"/>
+
+
   </head>
 
   <body class="left-sidebar">
-  
-  
-  <br><br>
-    <div align="center">
-      <img src="http://www.peeblescan.org/wp-content/uploads/2013/11/Banner_Food_Share.jpg" alt="rolledtacos" >
-
-    </div>
-
-    <div align="center">
-      <script type="text/javascript">
-        var rest = sessionStorage.getItem('restraunt') ;
-        var fd = sessionStorage.getItem('food') ;
-        document.write(rest);
-      
-      </script>
-    </div>
-
-      <!--BR><%= rest %> - <%= fd %>  -->
-      <!-- Search -->
-      <br>
-      <div align="center">
-
-        <p>Enter How You Would Rate The Food From 1 --> 5</p>
-        <span class="star-rating">
-          <input type="radio" name="rating" value="1"><i></i>
-          &nbsp;&nbsp;&nbsp;
-          <input type="radio" name="rating" value="2"><i></i>
-          &nbsp;&nbsp;&nbsp;
-          <input type="radio" name="rating" value="3"><i></i>
-          &nbsp;&nbsp;&nbsp;
-          <input type="radio" name="rating" value="4"><i></i>
-          &nbsp;&nbsp;&nbsp;
-          <input type="radio" name="rating" value="5"><i></i>
-        </span>
-        </div>
+ 
 
 
     <!-- Wrapper -->
@@ -64,7 +33,41 @@
         <!-- Content -->
           <div id="content">
             <div id="content-inner">
+             
             
+            <br><br>
+              <div class = "cycle-slideshow" align="center">
+                <img src="http://www.peeblescan.org/wp-content/uploads/2013/11/Banner_Food_Share.jpg" alt="rolledtacos" >
+
+              </div>
+
+              <div align="center">
+                <script type="text/javascript">
+                  var rest = sessionStorage.getItem('restaurant') ;
+                  var fd = sessionStorage.getItem('food') ;
+                  document.write(rest);
+                
+                </script>
+              </div>
+
+                <!--BR><%= rest %> - <%= fd %>  -->
+                <!-- Search -->
+                <br>
+                <div align="center">
+
+                  <p>Enter How You Would Rate The Food From 1 --> 5</p>
+                  <span class="star-rating">
+                    <input type="radio" name="rating" value="1"><i></i>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="rating" value="2"><i></i>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="rating" value="3"><i></i>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="rating" value="4"><i></i>
+                    &nbsp;&nbsp;&nbsp;
+                    <input type="radio" name="rating" value="5"><i></i>
+                  </span>
+                  </div>
 
             </div>
           </div>
@@ -82,7 +85,7 @@
               <nav id="nav">
                 <ul>
                   <li><a href="home.html">Home</a></li>
-                  <li><a href="newrestraunt.html">Food Recommendations</a></li>
+                  <li><a href="newrestaurant.html">Food Recommendations</a></li>
                   <li><a href="ratings.html">Ratings</a></li>
                   <li><a href="favorites.html">Favorites</a></li>
                   <li><a href="surprise.html">Surprise Me!</a></li>
