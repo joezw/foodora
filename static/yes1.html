@@ -1,9 +1,8 @@
 <!DOCTYPE HTML>
 <html>
   <head>
-    
-   
-    <title>Foodora Favorites</title>
+    <title>Foodora Ratings</title>
+
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="description" content="" />
     <meta name="keywords" content="" />
@@ -19,72 +18,42 @@
       <link rel="stylesheet" href="css/style-wide.css" />
     </noscript>
 
-    
+     <link rel="stylesheet" href="css/demo-slideshow.css"/>
 
-    <link rel="stylesheet" href="css/demo-slideshow.css"/>
+
   </head>
 
-  
-  <body onLoad = 'javascript:Randoms();'>
-
-            <!-- Content -->
-          <div id="content">
-            <div id="content-inner">
-                        <div>
-              
-              
-
-          
-
-          <div align="center">
-            
-            <div id = "image"></div>
-            <script type="text/javascript"> 
-              var number = Math.floor(Math.random()*101);
-            //  document.write(number);
-              document.write(number);
-              if(number <=101  ) {
-
-                  
-                  window.document.location.href = 'favorites1.html';
-              }
-    </script>
-              
-
-            <!--div id="random">random number being created...</div--> 
-            </div>
-            <br>
-            <center><a href="favorites.html" class="myButton">Try again?</a></center>
-
-            </div>
-            </div>
-
-
-  </body>
-  <body class="left-sidebar" 
-
-    <!-- Wrapper -->
+  <body class="left-sidebar">
+      <!-- Wrapper -->
       <div id="wrapper">
-
         <!-- Content -->
-          </div>
+        <div id="content">
+          <div id="content-inner">
+            <div align='center'>
+            <br><br><br><h2>
+            Thank You For Voting Yes For Our Current Layout.</h2>
+            Please Vote For our other choice as well.<br>
+            <button onclick="location.href='favorites2.html'">
+            Go</button>
+<!-- Sidebar --></div>
 
-        <!-- Sidebar -->
+
           <div id="sidebar">
           
             <!-- Logo -->
               <div id="logo">
-                <h1>Favorites</h1>
+
+                <h1>Ratings</h1>
               </div>
           
             <!-- Nav -->
               <nav id="nav">
                 <ul>
                   <li><a href="home.html">Home</a></li>
-                  <li><a href="newrestraunt.html">Food Recommendations</a></li>
-                  <li><a href="ratings.html">Ratings</a></li>
+                  <li><a href="newrestaurant.html">Food Recommendations</a></li>
+                  <li class="current_page_item"><a href="ratings.html">Ratings</a></li>
                   <li><a href="favorites.html">Favorites</a></li>
-                  <li class="current_page_item"><a href="surprise.html">Surprise Me!</a></li>
+                  <li><a href="surprise.html">Surprise Me!</a></li>
                 </ul>
               </nav>
 
@@ -104,9 +73,25 @@
                 </nav>
               </section>
 
+
           </div>
 
+
       </div>
+
+        
+      <script type = "text/javascript">
+ 
+        function store()
+        {
+          var text1 = document.setItem('text1') ;
+          var data = text1.value ;
+ 
+          sessionStorage.setItem('restaurant',text1) ;
+          //alert('Stored Data : ' + data) ;
+        }
+      </script>
+    </section>
 
   </body>
 </html>
