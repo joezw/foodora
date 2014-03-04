@@ -21,7 +21,20 @@
 
   </head>
 
-  
+  <script>
+    function print1()
+    {
+      document.getElementById("print1").innerHTML="Changes Saved";
+    }
+    function print2()
+    {
+      document.getElementById("print2").innerHTML="Changes Saved";
+    }
+    function print3()
+    {
+      document.getElementById("print3").innerHTML="Changes Saved";
+    }
+  </script>  
   <body class="left-sidebar">
 
     <!-- Wrapper -->
@@ -35,12 +48,7 @@
         <!--div class="project" id="project1">
           <a href="project.html"-->
             <br><br>
-            <div align = "center">        
-            Do You Like the layout of This Page?            
-            <button onclick="location.href='yes2.html'">
-            Yes</button>
-            <button onclick="location.href='no2.html'">
-            No</button></div>
+            
             <div align="center">
               
             <img src="http://nykotynethefuture.files.wordpress.com/2009/07/rolled-tacos.jpg" alt="rolledtacos" height="50" width="125" ><br>
@@ -52,7 +60,11 @@
               <input type="radio" name="rating" value="4"><i></i>
               <input type="radio" name="rating" value="5" checked><i></i><br>
               <h>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</h><br>        
-              Submit<br>
+              <div align="center">
+        <strong class="choice">Choose a rating</strong>
+        </div>
+      
+        <button onclick="print1()">Submit</button><h1 id="print1"></h1>
             </span>
             <img src="http://eatsblog.dallasnews.com/files/import/87379-in-n-out%20faux%20burger-thumb-500x333-87378.jpg" alt="burger" height="50" width="125"><br>
             <h>In-N-Out</h><br>Animal Style Burger<br>
@@ -63,7 +75,11 @@
               <input type="radio" name="rating1" value="4"><i></i>
               <input type="radio" name="rating1" value="5" checked><i></i><br>
               <h>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</h><br>              
-              Submit<br>
+              <div align="center">
+        <strong class="choice">Choose a rating</strong>
+        </div>
+      
+        <button onclick="print2()">Submit</button><h1 id="print2"></h1>
             </span>
             <img src="http://xd2.xanga.com/d76e036301434273669565/z218198634.jpg" height="50" width="125"><br>
             <h>Outback</h><br>Prime Rib<br>
@@ -74,17 +90,19 @@
               <input type="radio" name="rating2" value="4"><i></i>
               <input type="radio" name="rating2" value="5" checked><i></i><br>
               <h>1&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;2&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5</h><br>              
-              Submit<br>
+              <div align="center">
+        <strong class="choice">Choose a rating</strong>
+        </div>
+      
+        <button onclick="print3()">Submit</button><h1 id="print3"></h1>
+
+        <div align="center">
+    <button onclick="location.href='answersB.html'">
+      Please Click Me When You are Done</button>
+      </div>
             </span>
             
             </div>
-            <!--<div align="center">-->
-              
-            <!--<br><br>-->
-
-            
-
-
 
         <!-- Sidebar -->
           <div id="sidebar">
@@ -126,11 +144,7 @@
 
       </div>
 
-      <div align="center">
-      
 
-
-    </div>
 
     <!-- Google Analytics Tracking Code -->
   <script>
@@ -144,4 +158,4 @@
 
   </script>
   </body>
-</html>*
+</html>
