@@ -22,7 +22,24 @@
   </head>
 
   <body class="left-sidebar">
+    <script>
+      function printRecommended()
+      {
+        val1 = document.getElementById("restaurant").value;
+        if (val1 == "subway"){
+        document.getElementById("print1").innerHTML="Recommended For You At<br>"+val1+" Is:<br><br>1) Italian BMT<br>1) Meatball Marinara<br>3) Hot Pastrami";
+        }else if (val1 == "panda express"){
+            document.getElementById("print1").innerHTML="Recommended For You At<br>"+val1+" Is:<br><br>1) Orange Chicken<br>2) Beef and Broccoli<br>3) Beijing Beef";
+          }else if (val1 == "rubios"){
+            document.getElementById("print1").innerHTML="Recommended For You At<br>"+val1+" Is:<br><br>1) Fish Taco w/ Flour Tortillas<br>2) Langostino Lobster Burrito<br>3) Burrito Especial";
+          }
+              else
+              {
+                document.getElementById("print1").innerHTML="Please Re-Enter a valid restaurant";
+              }
 
+      }
+    </script>
     <!-- Wrapper -->
       <div id="wrapper">
 
@@ -35,15 +52,19 @@
               </div>
 
 
-        <form action="newrestaurant.html" method="get">
+
         Please Enter The Restaurant You Are At:
          <input type="text1" id="restaurant" required title="Please Enter The Restaurant You Are At" placeholder="Enter The Restaurant" />
       
       <br>
       <br>
-            <button type="submit" formaction="foodrecommendation.html" value = "Store Data" onclick="store()">Submit</button>  
+            
+            <button type="submit" onclick="printRecommended()">Submit</button>  
       </form>
+      <br><br>
 
+      <div align="center">
+            <h2 id="print1"></h2>
 
             </div>
           </div>
@@ -55,7 +76,7 @@
           
             <!-- Logo -->
               <div id="logo">
-                <h1>User Picks</h1>
+                <h1>Recommend</h1>
               </div>
           
             <!-- Nav -->
@@ -69,13 +90,7 @@
                 </ul>
               </nav>
 
-            <!-- Search -->
-              <section class="is-search">
-                <form method="post" action="#">
-                  <input type="text" class="text" name="search" placeholder="Search" />
-                </form>
-              </section>
-
+         
               <section class="is-quit">
                 <nav id="nav">
                   <ul>
