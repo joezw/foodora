@@ -83,7 +83,7 @@ function login(request, response)
         if (err || (acc.length === 0))
         {
             console.log("Invalid user");
-            response.sendfile('./static/home.html');
+            response.sendfile('./static/invalid_password.html');
             return false;
         }
         else
